@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            REGISTRATION FORM
+        </title>
+       <style>
+        body{
+            background-image:url('https://wallpaperaccess.com/full/87755.jpg');
+            border:2px solid red;
+            background-size :cover;
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+            opacity:400  ;
+            background-color: rgba(255, 255, 255, 0.7);
+
+            
+        }
+        .image-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image1-container{
+          float:right;
+        }
+        
+        .square {
+            padding: 30px;
+            min-height: 300px;
+            resize: vertical;
+            }
+       </style>
+        <body>
+            <p style="font-size: xx-large; font-style: oblique; text-align: center; color: rgb(255, 77, 0);">
+                NIT VINUKONDA</br> 
+                REGISTRATION FORM 
+            </p>
+            <div class="image-container">
+            <image  src="https://cdn.dribbble.com/users/2917825/screenshots/5841603/untitled-1.png"  width="100" height="100" float="center"></image>
+                </div>
+                <div>
+                        <image class="image1-container" src="https://content.jdmagicbox.com/comp/guntur/p3/9999p8642.8642.110328083036.a8p3/catalogue/sri-chaitanya-techno-school-guntur-schools-80r4x6xcpb.jpg?clr=" width="350" height="350">
+                    
+                    <form onsubmit=" return validate()" class="square" style="font-size:x-large; color:rgb(56, 245, 9)" >
+                        <label for="fname">STUDENT NAME : </label>
+                        <input type="text" id="fname" name="fname"></br>
+                        <br>
+                        <label for="age">STUDENT AGE    :   </label>
+                        <input type="number" id="age" name="age"></br>
+                        <br>    
+                        <label for="fathersname">FATHER NAME : </label>
+                        
+                        <input type="text" id="fathersname" name="fathersname"></br>
+                        <br>
+                        <label for="mothersname">MOTHER NAME : </label>
+                        <input type="text" id="mothersname" name="mothersname"></br>
+                         <br>
+                        <label for="fatheraccupation">FATHER-OCCUPATION: </label>
+                        <input type="text" id="fatheraccupation" name="fatheraccupation"></br>
+                        <br>
+                        <label for="motheraccupation">MOTHER-OCCUPATION : </label>
+                        <input type="text" id="motheraccupation" name="motheraccupation"></br>
+                        <br>
+                        <label for="studentaddress">STUDENT-ADDRESS : </label>
+                        <input type="text" id="studentaddress" name="studentaddress"></br>
+                        <br>
+                        <p style="text-align: center;">
+                        CHOOSE YOUR PREFFERED SUBJECT<br>
+                        <br>
+                        <input type="radio" id="computer science" name="subject" value="COMPUTER SCIENCE">
+                        <label for="computer science"></label>COMPUTER SCIENCE</label></br>
+                        <input type="radio" id="information tecchnology" name="subject" value="INFORMATION TECHNOLOGY">
+                        <label for="information tecchnology">INFORMATION TECHNOLOGY</label></br>
+                        <input type="radio" id="electronics" name="subject" value="ELECTRONICS">
+                        <label for="electronics">ELECTRONICS</label></br>
+                        <input type="radio" id="mechanical" name="subject" value="MECHANICAL">
+                        <label for="mechanical">MECHANICAL</label></br>
+                        <input type="radio" id="architucture" name="subject" value="ARCHITECTURE">
+                        <label for="architucture">ARCHITECTURE</label></br>
+                        </p>
+                        <image class="image1-container" src="https://content3.jdmagicbox.com/comp/guntur/p3/9999p8642.8642.110328083036.a8p3/catalogue/sri-chaitanya-techno-school-guntur-schools-cpyke98h9s.jpg" width="350" height="300"></image>
+                        <label for="percentile">JEE-MAINS PERCENTILE : </label>
+                        <input type="number" id="percentile" name="percentile"></br>
+                        <br>
+                        <label for="rank">JEE-MAINS RANK : </label>
+                        <input type="number" id="rank" name="rank"></br>
+                        <br>
+                        <label for="email">ENTER YOUR MAIL-ID : </label>
+                        <input type="email" id="email" name="email"></br>
+                        <br>
+                        <label for="phnumber">PH-NUMBER : </label>
+                        <input type="number" id="phnumber" name="phnumber"></br>
+                        <br>
+                        <label for="additionalphnumber"> ADDITIONAL PH-NUMBER : </label>
+                        <input type="number" id="additionalphnumber" name="additionalphnumber"></br>
+                        <br>
+                        <P style="text-align: center;">
+                            WHICH STATE YOU BELONGS TO: <br>
+                            <br>
+
+                            <input type="checkbox" id="homestate" name="state" value="HOME STATE">
+                            <label for="homestate" >HOME STATE</label></br>
+                            <br>
+                            <input type="checkbox" id="otherstate" name="state" value="OTHER STATE">
+                            <label for="otherstate">OTHER STATE</label>
+                            <br>
+
+                        </P>
+                        <p style="text-align: center; font-size: xx-large; color:yellow">
+                            <button onclick="validateForm()" type="submit">submit</button>
+                            <input type="reset" id="html" name="reset" value="RESET">
+                        </p>
+                    </form>  
+                </div>
+                <script>
+                    function validate()
+                    {
+                        var fname=document.getElementById("fname");
+                        var age=document.getElementById("age");
+                        var fathersname=document.getElementById("fathersname");
+                        var mothersname=document.getElementById("mothersname");
+                        var fatheroccupation =document.getElementById("fatheroccupation");
+                        var motheroccupation=document.getElementById("motheroccupation");
+                        var studentaddress=document.getElementById("studentaddress");
+                        var phnumber=document.getElementById("phnumber");
+                        var additionalphnumber=document.getElementById("additionalphnumber");
+                        var rank=document.getElementById("rank");
+                        var percentile=document.getElementById("percentile");
+                    
+                    if(fname.value=="" || age.value==""|| fathersname==""|| mothersname==""|| fatheroccupation==""|| motheroccupation==""|| studentaddress==""||phnumber==""||additionalphnumber=="" || rank=="" || percentile=="")
+                    {
+                        alert("fill all the required details !");
+                        return false;
+                        
+
+                   }
+                   else{
+                    alert("form has been submitted");
+                    return true;
+                   }
+                    }   
+            
+            
+
+                  
+                
+                </script> 
+        </body>
+    </head>
+</html>
